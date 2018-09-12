@@ -1,15 +1,4 @@
-/e/projects/tekwill_sql/src/tekwill_sql (master)
+12.09.2018
 
-$ git add lesson1/
-
-
-
-/e/projects/tekwill_sql/src/tekwill_sql (master)
-
-$ git commit -am "primult meu commit"
-
-
-
-/e/projects/tekwill_sql/src/tekwill_sql (master)
-
-$ git push
+-- Am instalat GitExtension de pe : http://gitextensions.github.io/
+-- GitBash de pe: https://git-scm.com/download/win
