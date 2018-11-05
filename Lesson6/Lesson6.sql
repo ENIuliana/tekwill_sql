@@ -110,3 +110,124 @@ Select *
 from employees 
 where salary>=10000
 or job_id like'%MAN%';
+
+
+
+Select *--last_name
+     -- ,department_id
+     -- ,salary
+from employees 
+where department_id=60
+or department_id=80
+and salary > 10000;
+  
+
+
+Select *--last_name
+     -- ,department_id
+     -- ,salary
+from employees 
+where department_id=60
+or department_id=80
+and salary > 10000;
+
+
+Select* 
+from employees
+where job_id ='SA_REP'
+or job_id ='SA_MAN'
+and phone_number like'5%';
+
+
+
+Select* 
+from employees
+where (job_id ='SA_REP'
+or job_id ='SA_MAN')
+and phone_number like'0%';
+
+
+Select* 
+from employees
+where job_id ='SA_REP'
+or job_id ='SA_MAN'
+and phone_number like'5%';
+
+
+Select* 
+from employees
+where (job_id ='SA_REP'
+or job_id ='SA_MAN')
+and phone_number like'0%'
+Order by salary Desc;
+
+
+Select last_name || first_name AS fullname
+      ,salary as salariu
+from employees
+--Order by fullname Desc;
+Order by salariu, fullname;
+
+
+Select  salary as salariu
+       last_name || first_name AS fullname
+     -- ,salary as salariu
+from employees
+--Order by fullname Desc;
+Order by 1, 2;
+
+
+Select salary as salariu
+       ,last_name || first_name AS fullname     
+from employees
+--Order by fullname Desc;
+Order by 1 desc, 2 desc;
+
+
+Select * 
+from employees
+order by employee_id --desc
+Fetch first 10 rows only;
+
+
+
+Select * 
+from employees
+order by salary --desc
+--Offset 2 rows Fetch first 8 rows  only ;
+--Offset 1 rows 
+Fetch first 18 rows  with ties ;
+
+
+
+Select * 
+from employees
+order by salary --desc
+--Offset 2 rows Fetch first 8 rows  only ;
+Offset 1 row Fetch Next 18 rows  with ties ;
+
+
+Select * 
+from employees
+Where employee_id = &employee;
+--Where employee_id = 101
+
+
+
+Select * 
+from employees
+order by employee_id --desc
+Fetch first 10 rows only;
+
+
+
+
+
+
+
+
+
+
+
+
+
